@@ -1,45 +1,44 @@
 module.exports = (sequelize, DataTypes) => {
     const Stuff = sequelize.define('Stuff', {
         id: {
-        type: Sequelize.INTEGER,
+        type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
       },
-      id_brand: Sequelize.INTEGER,
-      title: Sequelize.STRING,
-      price: Sequelize.INTEGER,
-      descriptions: Sequelize.TEXT,
-      details: Sequelize.TEXT,
-      quantity: Sequelize.INTEGER,
+      id_brand: DataTypes.INTEGER,
+      title: DataTypes.STRING,
+      price: DataTypes.INTEGER,
+      descriptions: DataTypes.TEXT,
+      details: DataTypes.TEXT,
+      quantity: DataTypes.INTEGER,
       type: {
-        type: Sequelize.ENUM('Low', 'High')
+        type: DataTypes.ENUM('Low', 'High')
       },
-      slug: Sequelize.STRING,
+      slug: DataTypes.STRING,
       is_promo: {
-        type: Sequelize.BOOLEAN,
+        type: DataTypes.BOOLEAN,
         defaultValue: false
       },
       is_discount:{
-        type: Sequelize.BOOLEAN,
+        type: DataTypes.BOOLEAN,
         defaultValue: false
       },
       is_new:{
-        type: Sequelize.BOOLEAN,
+        type: DataTypes.BOOLEAN,
         defaultValue: false
       },
       is_soldout:{
-        type: Sequelize.BOOLEAN,
+        type: DataTypes.BOOLEAN,
         defaultValue: false
       },
       is_topsell:{
-        type: Sequelize.BOOLEAN,
+        type: DataTypes.BOOLEAN,
         defaultValue: false
       }
     },{
+        tableName: 'stuffs',
         timestamps: false
     });
 
-    Stuff.associate = function (models) {
-        Stuff.hasMany(models.)
-    }
+    return Stuff;
 }
