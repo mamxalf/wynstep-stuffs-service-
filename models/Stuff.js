@@ -14,27 +14,7 @@ module.exports = (sequelize, DataTypes) => {
       type: {
         type: DataTypes.ENUM('Low', 'High')
       },
-      slug: DataTypes.STRING,
-      is_promo: {
-        type: DataTypes.BOOLEAN,
-        defaultValue: false
-      },
-      is_discount:{
-        type: DataTypes.BOOLEAN,
-        defaultValue: false
-      },
-      is_new:{
-        type: DataTypes.BOOLEAN,
-        defaultValue: false
-      },
-      is_soldout:{
-        type: DataTypes.BOOLEAN,
-        defaultValue: false
-      },
-      is_topsell:{
-        type: DataTypes.BOOLEAN,
-        defaultValue: false
-      }
+      slug: DataTypes.STRING
     },{
         tableName: 'stuffs',
         timestamps: false
@@ -42,6 +22,9 @@ module.exports = (sequelize, DataTypes) => {
 
     Stuff.associate = function (models) {
         Stuff.hasOne(models.Size, {
+           foreignKey: 'id_stuff'
+        });
+        Stuff.hasOne(models.Label, {
            foreignKey: 'id_stuff'
         });
         Stuff.hasMany(models.Photo, {

@@ -10,12 +10,7 @@ module.exports = {
       details: 'With patrofoam',
       quantity: 10,
       type: 'Low',
-      slug: 'patrobas-equil-low-black-white',
-      is_promo: false,
-      is_discount: false,
-      is_new:false,
-      is_soldout:false,
-      is_topsell:false
+      slug: 'patrobas-equil-low-black-white'
     }, {
       id_brand: 1,
       title: 'Patrobas Equil High Black White',
@@ -24,12 +19,7 @@ module.exports = {
       details: 'With patrofoam',
       quantity: 20,
       type: 'High',
-      slug: 'patrobas-equil-high-black-white',
-      is_promo: false,
-      is_discount: false,
-      is_new:false,
-      is_soldout:false,
-      is_topsell:false
+      slug: 'patrobas-equil-high-black-white'
     }], {});
 
   },

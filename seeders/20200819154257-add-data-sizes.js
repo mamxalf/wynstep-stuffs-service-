@@ -3,7 +3,7 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.bulkInsert('sizes', [{
-      id_stuff: 7,
+      id_stuff: 1,
       size_37: 3,
       size_38: 3,
       size_39: 3,

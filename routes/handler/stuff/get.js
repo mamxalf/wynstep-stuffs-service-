@@ -1,7 +1,8 @@
 const models = require('../../../models/');
 
 module.exports = async (req, res) => {
-    const stuff = await models.Stuff.findAll({
+    const id = req.params.id;
+    const stuff = await models.Stuff.findByPk(id,{
         include: [
             { model: models.Size },
             { model: models.Photo },
@@ -9,6 +10,13 @@ module.exports = async (req, res) => {
             { model: models.Discount }
         ]
     });
+
+    if(!stuff){
+        return res.status(404).json({
+            status: 'error',
+            message: 'Detail Stuff not Found'
+        });
+    }
 
     return res.json({
        status: 'success',

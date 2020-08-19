@@ -17,27 +17,7 @@ module.exports = {
       type: {
         type: Sequelize.ENUM('Low', 'High')
       },
-      slug: Sequelize.STRING,
-      is_promo: {
-        type: Sequelize.BOOLEAN,
-        defaultValue: false
-      },
-      is_discount:{
-        type: Sequelize.BOOLEAN,
-        defaultValue: false
-      },
-      is_new:{
-        type: Sequelize.BOOLEAN,
-        defaultValue: false
-      },
-      is_soldout:{
-        type: Sequelize.BOOLEAN,
-        defaultValue: false
-      },
-      is_topsell:{
-        type: Sequelize.BOOLEAN,
-        defaultValue: false
-      }
+      slug: Sequelize.STRING
     });
   },
 
