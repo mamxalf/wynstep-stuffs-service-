@@ -40,5 +40,17 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     });
 
+    Stuff.associate = function (models) {
+        Stuff.hasOne(models.Size, {
+           foreignKey: 'id_stuff'
+        });
+        Stuff.hasMany(models.Photo, {
+           foreignKey: 'id_stuff'
+        });
+        Stuff.hasOne(models.Discount, {
+           foreignKey: 'id_stuff'
+        });
+    }
+
     return Stuff;
 }
