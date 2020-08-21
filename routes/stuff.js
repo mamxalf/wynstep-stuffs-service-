@@ -5,5 +5,8 @@ const stuffHandler = require('./handler/stuff');
 
 router.get('/', stuffHandler.getAll);
 router.get('/:id', stuffHandler.get);
+router.post('/', stuffHandler.create);
+router.delete('/:id', stuffHandler.destroy);
+router.put('/:id', stuffHandler.update);
 
 module.exports = router;
