@@ -10,6 +10,7 @@ const stuffsRouter = require('./routes/stuff');
 const sizesRouter = require('./routes/size');
 const discountRouter = require('./routes/discount');
 const labelRouter = require('./routes/label');
+const photoRouter = require('./routes/photo');
 
 const app = express();
 
@@ -25,5 +26,6 @@ app.use('/stuffs', stuffsRouter);
 app.use('/sizes', sizesRouter);
 app.use('/discounts', discountRouter);
 app.use('/labels', labelRouter);
+app.use('/photos', photoRouter);
 
 module.exports = app;

@@ -13,5 +13,12 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     });
 
+    Photo.associate = function (models) {
+        Photo.belongsTo(models.Stuff, {
+            foreignKey: 'id_stuff',
+            targetKey: 'id'
+        });
+    }
+
     return Photo;
 }
