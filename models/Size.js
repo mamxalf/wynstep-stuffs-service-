@@ -19,5 +19,12 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     });
 
+    Size.associate = function (models) {
+        Size.belongsTo(models.Stuff, {
+            foreignKey: 'id_stuff',
+            targetKey: 'id'
+        });
+    }
+
     return Size;
 }

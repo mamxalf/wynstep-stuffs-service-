@@ -21,8 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d94ac2e5-06db-43af-b457-9bbe99507aac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/discount.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/discount.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/handler/discount/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/handler/discount/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Size.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Size.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/handler/size/getAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/handler/size/getAll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/handler/size/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/handler/size/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/size.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/size.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +50,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -62,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597793067041</updated>
       <workItem from="1597793068336" duration="15262000" />
-      <workItem from="1598188132092" duration="2376000" />
+      <workItem from="1598188132092" duration="3671000" />
     </task>
     <servers />
   </component>
