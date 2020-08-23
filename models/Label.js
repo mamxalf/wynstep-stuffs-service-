@@ -16,5 +16,12 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     });
 
+    Label.associate = function (models) {
+        Label.belongsTo(models.Stuff, {
+            foreignKey: 'id_stuff',
+            targetKey: 'id'
+        });
+    }
+
     return Label;
 }
