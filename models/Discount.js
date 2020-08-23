@@ -13,5 +13,12 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     });
 
+    Discount.associate = function (models) {
+        Discount.belongsTo(models.Stuff, {
+            foreignKey: 'id_stuff',
+            targetKey: 'id'
+        });
+    }
+
     return Discount;
 }

@@ -8,6 +8,7 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const stuffsRouter = require('./routes/stuff');
 const sizesRouter = require('./routes/size');
+const discountRouter = require('./routes/discount');
 
 const app = express();
 
@@ -21,5 +22,6 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/stuffs', stuffsRouter);
 app.use('/sizes', sizesRouter);
+app.use('/discounts', discountRouter);
 
 module.exports = app;
